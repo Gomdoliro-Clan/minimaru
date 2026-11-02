@@ -1,0 +1,44 @@
+{
+  "name": "mini-maru",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "check-types": "tsc --noEmit",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@emotion/react": "11.14.0",
+    "@emotion/styled": "11.14.1",
+    "@tanstack/react-query": "5.66.0",
+    "@toss/use-overlay": "1.4.2",
+    "axios": "1.7.9",
+    "dayjs": "1.11.13",
+    "jotai": "2.12.1",
+    "jwt-decode": "4.0.0",
+    "next": "14.2.35",
+    "react": "18.3.1",
+    "react-daum-postcode": "3.2.0",
+    "react-dom": "18.3.1",
+    "zod": "3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "20.17.17",
+    "@types/react": "18.3.1",
+    "@types/react-dom": "18.3.0",
+    "eslint": "8.57.1",
+    "eslint-config-next": "14.2.35",
+    "msw": "2.7.0",
+    "prettier": "3.4.2",
+    "typescript": "5.5.4"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
+  },
+  "packageManager": "pnpm@9.0.0"
+}
