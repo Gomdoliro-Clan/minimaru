@@ -3,8 +3,6 @@ import 'dayjs/locale/ko';
 import type { Phase, Schedule } from '@/types/schedule';
 import { now } from './clock';
 
-dayjs.locale('ko');
-
 export const getPhase = (schedule: Schedule): Phase => {
   const current = now();
 
@@ -15,4 +13,5 @@ export const getPhase = (schedule: Schedule): Phase => {
   return 'FINAL_ANNOUNCED';
 };
 
-export const formatScheduleDate = (date: string) => dayjs(date).format('YYYY.MM.DD (dd) hh:mm');
+export const formatScheduleDate = (date: string) =>
+  dayjs(date).locale('ko').format('YYYY.MM.DD (dd) hh:mm');
